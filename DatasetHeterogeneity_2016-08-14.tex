@@ -175,21 +175,26 @@ in any scenario where multiple independent but comparable datasets are available
 %  \\ https://bitbucket.org/zhangyuqing/datasetheterogeneity.
 %  \subsection{The \emph{simulatorZ} Bioconductor package}
 
-  \citet{Bernau2014} introduced a systematic approach for synthesizing a
-  group of independent microarray datasets with survival outcome for
-  cross-study assessment of prediction algorithms. %, to replace or supplement 
-  %conventional cross-validation when evaluating prediction models in 
-  %independent datasets. 
-  This approach was illustrated with estrogen-receptor 
-  positive breast cancer microarray datasets, and performance statistics of cross-study 
-  and conventional cross-validation were compared.
+We evaluate the effects of between-study heterogeneity
+   by resampling of studies, and preserving the distribution and
+  covariance of gene expression through resampling of
+  individual patients within studies.  We generate linear models 
+  associating clinical/pathological variables and gene expression to outcome, as
+  well as baseline survival functions and censoring distributions,
+  based on the original experimental data.  We
+  emphasize that standard clinical factors were included as required,
+  unpenalized covariates in the ``true'' prognostic model so that
+  their associations with outcome would be guaranteed to be preserved
+  across simulations. 
+  We include these clinical covariates as binary predictors, along with
+  gene expression, in within and across-study validation.   
   
-  In the current work, we review the simulation procedure in the following sections, 
-  which involves a 3-step bootstrap method. We implemented this simulation approach 
-  in the \emph{simulatorZ} package available on Bioconductor. Scripts for reproducing
+  We review the simulation procedure in the following sections, 
+  which involves a 3-step bootstrap method. To implement this simulation approach, 
+  we developed the \emph{simulatorZ} package and made this available through Bioconductor. Scripts for reproducing
   the results of this paper are stored and documented at
   \\ https://bitbucket.org/zhangyuqing/datasetheterogeneity. 
-  
+
   \subsection{Datasets}
 
   The simulations were performed on two collections of cancer studies, with the first group
@@ -262,8 +267,9 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
       \quad & overall & 1021 & 44.1 & 29.6 & 50.9 & 19.5 & 72.3 &  \quad \\
       \hline
     \end{tabular*}
-    \caption{\textbf{Breast cancer microarray datasets divided into
-        base sets as used in this study}. Percentages are rounded to the nearest tenth. Datasets
+    \caption{\textbf{Covariate distributions in the ER-positive breast
+        cancer microarray base datasets}. 
+      Percentages are rounded to the nearest tenth. Datasets
       acronyms: CAL = University of California,
       San Francisco and the California Pacific Medical Center (United
       States), MNZ = Mainz hospital (Germany), TAM1 and TAM2 represents
@@ -282,11 +288,11 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
   The other collection of ovarian cancer microarray datasets was published in
   \citet{Ganzfried2013} and made available through the \emph{curatedOvarianData} 
   Bioconductor package. To select a group of studies for simulation, 
-  we filtered datasets with at least 1000 genes, 40 individuals and 15 events. Batch effect was
+  we filtered datasets with at least 1000 genes, 40 individuals and 15 events. Batch effects were
   adjusted within each data set when the batch information was available, 
   and the expression values were standardized with z-score scaling.
   Missing values in the expression matrices 
-  were imputed by the K-nearest neighbors approach \citep{KNN}. We then took the overlapped 
+  were imputed by the K-nearest neighbors approach \citep{KNN}. We then took the overlapping
   genes across all studies, and removed all genes with a standard deviation below 
   the 60\% quantile in every selected dataset, which resulted in 7484 gene features.
  
@@ -323,7 +329,7 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
       \quad & overall & 935 & 22.7 &  34.1 & \\
       \hline
     \end{tabular*}
-    \caption{\textbf{Ovarian cancer microarray datasets}. Column lables:
+    \caption{\textbf{Covariate distributions in the overian cancer microarray base datasets}. Column lables:
       \#patients = the number of patients after cleaning. \%$>$70yrs = percentage 
       of patients older than 70 years. \%suboptimal =
       percentage of patients in cleaned datasets with suboptimally debulked tumors, as opposed to the optimally debulked ones.}%
@@ -332,10 +338,16 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
     \label{table-datasets-ovarian}
   \end{table*}
   
-  The \emph{simulatorZ} Bioconductor package was developed to
+  \citet{Bernau2014} introduced a systematic approach for synthesizing a
+  group of independent microarray datasets with survival outcome for
+  cross-study assessment of prediction algorithms. %, to replace or supplement 
+  %conventional cross-validation when evaluating prediction models in 
+  %independent datasets. 
+
+  We developed the \emph{simulatorZ} Bioconductor package to
   create a collection of independent genomic datasets with
   realistic properties and time-to-event outcome generated from a
-  known risk model. It also implements the M\'{a}s-o-menos algorithm
+  known risk model. \emph{simulatorZ} also implements the M\'{a}s-o-menos algorithm
   \citep{Zhao2014} and provides basic facilities for 
   cross-validation and cross-study validation of prognostic models.
   It supports \emph{ExpressionSet} objects to simulate
@@ -379,7 +391,7 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
     clinical covariates, such as
     tumor size, debulking, histological grade and patient age, as predictors.
     The prognostic covariates were included to be mandatory unpenalized.
-    We also obtained Nelson-Aalen estimator of baseline cumulative survival and
+    We also obtained the Nelson-Aalen estimator of baseline cumulative survival and
     censoring hazard, which, together with the \emph{CoxBoost}
     coefficients and equation \ref{coxfunction}, defined the "true"
     models of disease-free survival for each dataset.  Finally, we have:
@@ -407,18 +419,22 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
     cumulative hazards. The simulated survival response is the smaller one between
     $T$ and $C$. This completes the simulation of datasets.
 
-	The M\'{a}s-o-menos algorithm \citep{Zhao2014} and ridge 
+	The M\'{a}s-o-menos algorithm \citep{Zhao2014, Donoho08 **Higher Criticism Thresholding:
+Optimal Feature Selection when Useful Features are Rare and Weak**} and ridge 
 	regression \citep{hoerl1970ridge} were chosen as
     examples of predictive models to generate risk scores on the simulated datasets. 
     We repeated 100 simulations and model validations 
     for each of the three dataset / algorithm combinations, 
     which are breast cancer data with M\'{a}s-o-menos and ridge regression methods, 
-    and ovarian cancer with the M\'{a}s-o-menos algorithm.
+    and ovarian cancer with the M\'{a}s-o-menos
+    algorithm. \citet{Bernau2014} and \citet{Zhao2014} have shown that these algorithms
+    perform comparably to more complicated methods in these datsaets.
     
     In each of 100 iterations, we simulated a list of independent datasets of
     sample size $n=150$ using the "original sets" and this 3-step bootstrap approach.  We
-    then generated a matrix of C-indices as described by
-    \citet{Bernau2014}, using predictive algorithms. %We noted that
+    then generated a matrix of C-indices for all combinations of
+    training and test sets, as described below
+    \citep{Bernau2014}. %We noted that
    % popular alternatives to the M\'{a}s-o-menos algorithm, such as
    % Ridge Regression, produced consistent results. 
     Cross study validation (CSV) performance was summarized by the
@@ -428,7 +444,7 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
     of the diagonal elements \citep{Bernau2014}. The process was
     repeated while altering potential sources of across-study
     heterogeneity, as described in the next three subsections of
-    Methods. The workflow of methods are summarized in Figure \ref{scheme}.
+    Methods. The workflow of methods is summarized in Figure \ref{scheme}.
 
 \begin{figure*}[htp]
     \centering
@@ -479,7 +495,7 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
 	simulations with balanced covariates compared to those with the unbalanced ones. $C$ stands for the cross-study validation score 
 	calculated from the performance matrices. $\%old(train)$ and $\%old(test)$ are the percentage 
 	of old patients in the training and the test set. The last term is the interaction 
-	between the two main effects. For each dataset / algorithm combination, we 
+	between training and testing terms. For each dataset / algorithm combination, we 
 	used the off-diagonal elements in 100 matrices of C-indices to form the design matrix. All terms 
 	in the linear model are regarded as fixed effects with random slopes, 
 	which avoids treating observations as independent within each simulation. %To address the overfitting issues,  avoid treating the multiple simulations as pseudo-replication
@@ -487,9 +503,10 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
 	%according to the data.
 	
   \subsection{Expression Covariance}
-  To mitigate the potential impact of heterogeneity between gene
-  expression levels in different datasets, we used only genes with
-  high Integrative Correlation \citep{Parmigiani2004, Garrett-Mayer2008} assessed
+  To investigate the potential impact of heterogeneity between gene
+  expression levels in different datasets, we compared the baseline
+  case to the case where we only use used only genes with
+  high Integrative Correlation \citep{Parmigiani2004, Garrett-Mayer2008}
   between every dataset pair. Briefly, we first calculated the Pearson
   correlation matrix of each gene expression matrix. For each pair of
   datasets, the Pearson correlation of the $k$-th rows of the two
@@ -611,8 +628,9 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
 
 %Figure \ref{scheme} summarizes the methods and results of our
 %study. 
-In original and simulated data we observed
-dramatic loss of survival discrimination accuracy, reductions of
+In original and simulated data,  we observed
+dramatic loss of survival discrimination accuracy in cross-study
+validation (CSV) when compared to cross-validation (CV). These reductions were
 approximately 0.04 on the C-index scale. We manipulated aspects of
 the simulated data to establish that reducing heterogeneity in
 prevalence of important clinical covariates and in gene expression
@@ -632,19 +650,7 @@ prediction accuracy. %for breast cancer, but not in the ovarian cancer data.
   %microarray studies of ER-positive breast cancer with censored
   %disease and metastasis-free survival (DMFS) outcome, 
   two collections of cancer microarray studies in a 3-step bootstrap
-  simulation procedure. The effects of between-study heterogeneity
-  were simulated by resampling of studies, and distribution and
-  covariance of gene expression was preserved through resampling of
-  individual patients within studies.  Linear models associating
-  clinical/pathological variables and gene expression to outcome, as
-  well as baseline survival functions and censoring distributions,
-  were generated based on the original experimental data.  We
-  emphasize that standard clinical factors were included as required,
-  unpenalized covariates in the ``true'' prognostic model so that
-  their associations with outcome would be guaranteed to be preserved
-  across simulations. 
-  These clinical covariates were also included as binary predictors along with
-  gene expressions in the within and across-study validation.   
+  simulation procedure. 
 
   The simulation resulted in within and across-dataset
   training/ validation characteristics comparable to those from prior
@@ -704,27 +710,28 @@ prediction accuracy. %for breast cancer, but not in the ovarian cancer data.
   re-weighted bootstrap sampling probabilities to balance tumor size,
   grade and patient age for the breast cancer data, and age and 
   debulking status for the ovarian cancer data. Proportions of these factors
-  were then the same, on average, for each simulated dataset. We observed that
-  %that balancing these covariates improves the
-  %performance of CV while worsening CSV, making the difference even
-  %greater 
-  balancing these covariates improves the performances of both CV and CSV for breast cancer. 
+  were then the same, on average, for each simulated dataset. 
   For both cancer types, the differences between CV and CSV are not eliminated 
   (Figure \ref{boxplot_breast_masomenos} and Supplementary Figure 1, "rebalanced covariates"). In this scenario, differing distributions of these
   covariates across datasets does not contribute to the loss of
   prediction accuracy across studies relative to within studies.
 
-  \subsubsection{Balancing the prevalence of clinical factors shuffles the rank of CSV scores}
-  Though the prevalence of covariates does not account for the drop in accuracy in cross-study
-  validation, we found that the rank of CSV scores is strongly affected. In other words, 
-  the performance in individual cross-study training / test dataset pairs 
-  is affected, with no overall effect across all training/testing pairs 
-  (Supplementary Figure 5). To quantify this observation,
+%%  \subsubsection{Balancing the prevalence of clinical factors shuffles the rank of CSV scores}
+  Though the re-balancing of covariates does not mitigate the overall drop in accuracy in cross-study
+  validation, we found that the rank of CSV scores may be affected
+  depending on the algorithm used. Supplementary Figure 5 displays 
+  re-ordering of performance ranks for different training/test pairs,
+  but with no overall effect across all training/testing pairs. 
+
+
+To quantify this observation,
   we used a linear model for every covariate which associates the changes in proportions of 
-  clinical factors to the changes in the CSV scores. We found that changing prevalence of  
-  certain covariates, such as age and debulking status for ovarian cancer, does not significantly relate
-  to the prediction accuracy changes, even when these covariates themselves are prognostic to the survival outcome (Table \ref{regress-table}).
-  
+  clinical factors to the changes in the CSV scores. Taable
+  \ref{regress-table} summarizes the results of this analysis and highlight which covariates have an effect
+on CSV in the two methodologies used. 
+Interestingly, even covariates that are prognostic of the survival
+outcome do not necessarily significantly relate
+  to the prediction accuracy changes.
   	
 %  \subsubsection{Eliminating Heterogeneity in Prevalence of PGR Expressing Breast Tumors}
 %  PGR was available in only 5 datasets in the breast cancer studies, so we balanced it separately
@@ -743,7 +750,7 @@ prediction accuracy. %for breast cancer, but not in the ovarian cancer data.
   As a comparison to grid search, we used arbitrary thresholds of 0.4 for breast cancer and 0.2 for ovarian cancer. Using only genes with Integrative Correlation greater than 0.4 reduced the number of genes from 5307 to 343 (6.5\%) for breast cancer. A threshold of 0.2 reduced the number of genes 
   from 7484 to 590 (7.9\%) in ovarian cancer data. Both CV and CSV performs slightly worse using the fixed thresholds compared to the grid search, which results from the loss of good predictors due to strict filtering. The observed pattern remains (Supplementary Figure 6), which suggest that the result is robust to the two choices of thresholds. Filtering genes to enforce similar
   covariance structures across studies, as would be expected in the
-  absence of microarray batch or platform effects, also does not
+  absence of microarray batch or platform effects, reduces but does not
   remove the CV-CSV difference.
   
 %  Both CV and CSV performance are similarly slightly reduced by this reduction in
@@ -760,7 +767,9 @@ prediction accuracy. %for breast cancer, but not in the ovarian cancer data.
   survival in each dataset and for all datasets combined. Differences
   in baseline survival mean that survival across all patients is better in some
   datasets than others, for example varying between 60\% and nearly 90\% 5-year
-  survival. We equalized both coefficients and baseline hazards across studies.
+  survival. We equalized both coefficients and baseline hazards across
+  studies, while allowing the joint distribution of covariates to
+  remain heterogeneous.
 
   Utilizing true survival models that are identical in both
   baseline survival and coefficients is sufficient to eliminate the
@@ -854,10 +863,10 @@ we observed a discrepancy in C-index for models validated in fully
 independent studies when compared to standard cross-validation.
 Independent validation statistics were 0.04 worse on the
 C-index scale for independent validation when compared to
-cross-validation, a sizeable difference that could yield
-cross-validation almost meaningless for deciding whether to pursue
-follow-up experiments for a prediction model developed and validated
-on only a single dataset. We thus investigated the contributions of
+cross-validation, a sizeable difference that questions the utility 
+of cross-validation for deciding whether to
+pursue further development of a prediction model developed and
+validated on a single dataset. We thus investigated the contributions of
 known and unknown sources of heterogeneity to this discrepancy.
 
 In simulations mimicking these two compendia of datasets, decreasing
@@ -905,21 +914,23 @@ degradation across studies. %All interaction terms
 %these tumors do not help in building survival models, 
 %although the positive interaction term still suggests a 
 %benefit of consistency in prevalence of optimal debulking.
+
 Interestingly, we found that although some covariates strongly affect survival, 
-they do not have much impact on the prediction of survival. Heterogeneity in the prevalence 
+they do not have much impact on the cross-study stability of
+predictions of survival.  Heterogeneity in the prevalence 
 of covariates like debulking and patient age for ovarian cancer can impact 
 overall survival, but not the ability to predict overall survival.
 
 Similarly, in these compendia of datasets spanning at least 11 different labs
 and 4 different microarray technologies, enforcing good
 expression measurement comparability through selection of genes with
-high Integrative Correlation \citep{Parmigiani2004, Garrett-Mayer2008} did not improve
+high Integrative Correlation \citep{Parmigiani2004, Garrett-Mayer2008} marginally improved
 the comparability of cross-study validation and cross-validation. Only
 ensuring fully identical models of association between gene expression
 and outcome for each study was sufficient to eliminate this
 discrepancy. %for the breast cancer type.  
 We liken this heavy-handed approach to study equality to
-correcting for the impacts of all possible unknown sources of
+correcting for the impacts of all unknown sources of
 between-study heterogeneity. Thus in these datasets, the most
 important sources of heterogeneity from the perspective of cross-study
 validation are not recorded in the published datasets.
