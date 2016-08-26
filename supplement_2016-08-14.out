@@ -1,9 +1,0 @@
-\BOOKMARK [1][-]{section.1}{Boxplots of CV and CSV scores}{}% 1
-\BOOKMARK [1][-]{section.2}{Availability of Covariates in Breast Cancer Data}{}% 2
-\BOOKMARK [1][-]{section.3}{Hazard Ratio of Covariates}{}% 3
-\BOOKMARK [1][-]{section.4}{Forest Plots of Hazard Ratio of the Covariates}{}% 4
-\BOOKMARK [1][-]{section.5}{Cross-study validation matrices using M\341s-o-menos on the original and simulated breast cancer datasets}{}% 5
-\BOOKMARK [1][-]{section.6}{Bar-plots of covariate distributions before and after balancing}{}% 6
-\BOOKMARK [1][-]{section.7}{Spaghetti Plots}{}% 7
-\BOOKMARK [1][-]{section.8}{Fixed threshold for filtering genes with Integrative Correlation}{}% 8
-\BOOKMARK [1][-]{section.9}{Remove CAL}{}% 9

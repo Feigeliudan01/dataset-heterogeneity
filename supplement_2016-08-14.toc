@@ -1,9 +1,0 @@
-\contentsline {section}{\numberline {1}Boxplots of CV and CSV scores}{2}{section.1}
-\contentsline {section}{\numberline {2}Availability of Covariates in Breast Cancer Data}{4}{section.2}
-\contentsline {section}{\numberline {3}Hazard Ratio of Covariates}{5}{section.3}
-\contentsline {section}{\numberline {4}Forest Plots of Hazard Ratio of the Covariates}{6}{section.4}
-\contentsline {section}{\numberline {5}Cross-study validation matrices using M\'{a}s-o-menos on the original and simulated breast cancer datasets}{8}{section.5}
-\contentsline {section}{\numberline {6}Bar-plots of covariate distributions before and after balancing}{9}{section.6}
-\contentsline {section}{\numberline {7}Spaghetti Plots}{11}{section.7}
-\contentsline {section}{\numberline {8}Fixed threshold for filtering genes with Integrative Correlation}{12}{section.8}
-\contentsline {section}{\numberline {9}Remove CAL}{14}{section.9}
