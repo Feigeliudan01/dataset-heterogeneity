@@ -1,0 +1,276 @@
+\begin{thebibliography}{}
+
+\bibitem[Aalen(1978)Aalen]{Aalen1978}
+Aalen, O. (1978).
+\newblock Nonparametric inference for a family of counting processes.
+\newblock {\em The Annals of Statistics\/}, {\bf 6}(4), 701--726.
+
+\bibitem[Bender {\em et~al.}(2005)Bender, Augustin, and Blettner]{Bender2005}
+Bender, R., Augustin, T., and Blettner, M. (2005).
+\newblock Generating survival times to simulate cox proportional hazards
+  models.
+\newblock {\em Stat. Med.}, {\bf 24}(11), 1713--1723.
+
+\bibitem[Bentink {\em et~al.}(2012)Bentink, Haibe-Kains, Risch, Fan, Hirsch,
+  Holton, Rubio, April, Chen, Wickham-Garcia, {\em
+  et~al.}]{bentink2012angiogenic}
+Bentink, S., Haibe-Kains, B., Risch, T., Fan, J.-B., Hirsch, M.~S., Holton, K.,
+  Rubio, R., April, C., Chen, J., Wickham-Garcia, E., {\em et~al.} (2012).
+\newblock Angiogenic mrna and microrna gene expression signature predicts a
+  novel subtype of serous ovarian cancer.
+\newblock {\em PloS one\/}, {\bf 7}(2), e30269.
+
+\bibitem[Bernau {\em et~al.}(2014)Bernau, Riester, Boulesteix, Parmigiani,
+  Huttenhower, Waldron, and Trippa]{Bernau2014}
+Bernau, C., Riester, M., Boulesteix, A.-L., Parmigiani, G., Huttenhower, C.,
+  Waldron, L., and Trippa, L. (2014).
+\newblock Cross-study validation for the assessment of prediction algorithms.
+\newblock {\em Bioinformatics\/}, {\bf 30}(12), i105--i112.
+
+\bibitem[Binder and Schumacher(2008)Binder and Schumacher]{Binder2008}
+Binder, H. and Schumacher, M. (2008).
+\newblock Allowing for mandatory covariates in boosting estimation of sparse
+  high-dimensional survival models.
+\newblock {\em BMC Bioinformatics\/}, {\bf 9}, 14.
+\newblock CoxBoost.
+
+\bibitem[Bonome {\em et~al.}(2008)Bonome, Levine, Shih, Randonovich,
+  Pise-Masison, Bogomolniy, Ozbun, Brady, Barrett, Boyd, {\em
+  et~al.}]{bonome2008gene}
+Bonome, T., Levine, D.~A., Shih, J., Randonovich, M., Pise-Masison, C.~A.,
+  Bogomolniy, F., Ozbun, L., Brady, J., Barrett, J.~C., Boyd, J., {\em et~al.}
+  (2008).
+\newblock A gene signature predicting for survival in suboptimally debulked
+  patients with ovarian cancer.
+\newblock {\em Cancer research\/}, {\bf 68}(13), 5478--5486.
+
+\bibitem[Castaldi {\em et~al.}(2011)Castaldi, Dahabreh, and
+  Ioannidis]{Castaldi2011-dl}
+Castaldi, P.~J., Dahabreh, I.~J., and Ioannidis, J. P.~A. (2011).
+\newblock An empirical assessment of validation practices for molecular
+  classifiers.
+\newblock {\em Brief. Bioinform.}, {\bf 12}(3), 189--202.
+
+\bibitem[Chin {\em et~al.}(2006)Chin, DeVries, Fridlyand, Spellman,
+  Roydasgupta, Kuo, Lapuk, Neve, Qian, Ryder, {\em et~al.}]{chin2006genomic}
+Chin, K., DeVries, S., Fridlyand, J., Spellman, P.~T., Roydasgupta, R., Kuo,
+  W.-L., Lapuk, A., Neve, R.~M., Qian, Z., Ryder, T., {\em et~al.} (2006).
+\newblock Genomic and transcriptional aberrations linked to breast cancer
+  pathophysiologies.
+\newblock {\em Cancer cell\/}, {\bf 10}(6), 529--541.
+
+\bibitem[Cortes {\em et~al.}(2008)Cortes, Mohri, Riley, and
+  Rostamizadeh]{Cortes2008}
+Cortes, C., Mohri, M., Riley, M., and Rostamizadeh, A. (2008).
+\newblock Sample selection bias correction theory.
+\newblock {\em CoRR\/}, {\bf abs/0805.2775}.
+
+\bibitem[Desmedt {\em et~al.}(2007)Desmedt, Piette, Loi, Wang, Lallemand,
+  Haibe-Kains, Viale, Delorenzi, Zhang, d'Assignies, {\em
+  et~al.}]{desmedt2007strong}
+Desmedt, C., Piette, F., Loi, S., Wang, Y., Lallemand, F., Haibe-Kains, B.,
+  Viale, G., Delorenzi, M., Zhang, Y., d'Assignies, M.~S., {\em et~al.} (2007).
+\newblock Strong time dependence of the 76-gene prognostic signature for
+  node-negative breast cancer patients in the transbig multicenter independent
+  validation series.
+\newblock {\em Clinical cancer research\/}, {\bf 13}(11), 3207--3214.
+
+\bibitem[Donoho and Jin(2008)Donoho and Jin]{donoho2008higher}
+Donoho, D. and Jin, J. (2008).
+\newblock Higher criticism thresholding: Optimal feature selection when useful
+  features are rare and weak.
+\newblock {\em Proceedings of the National Academy of Sciences\/}, {\bf
+  105}(39), 14790--14795.
+
+\bibitem[Foekens {\em et~al.}(2006)Foekens, Atkins, Zhang, Sweep, Harbeck,
+  Paradiso, Cufer, Sieuwerts, Talantov, Span, {\em
+  et~al.}]{foekens2006multicenter}
+Foekens, J.~A., Atkins, D., Zhang, Y., Sweep, F.~C., Harbeck, N., Paradiso, A.,
+  Cufer, T., Sieuwerts, A.~M., Talantov, D., Span, P.~N., {\em et~al.} (2006).
+\newblock Multicenter validation of a gene expression--based prognostic
+  signature in lymph node--negative primary breast cancer.
+\newblock {\em Journal of clinical oncology\/}, {\bf 24}(11), 1665--1671.
+
+\bibitem[Ganzfried {\em et~al.}(2013)Ganzfried, Riester, Haibe-Kains, Risch,
+  Tyekucheva, Jazic, Wang, Ahmadifar, Birrer, Parmigiani, Huttenhower, and
+  Waldron]{Ganzfried2013}
+Ganzfried, B.~F., Riester, M., Haibe-Kains, B., Risch, T., Tyekucheva, S.,
+  Jazic, I., Wang, X.~V., Ahmadifar, M., Birrer, M.~J., Parmigiani, G.,
+  Huttenhower, C., and Waldron, L. (2013).
+\newblock {curatedOvarianData}: clinically annotated data for the ovarian
+  cancer transcriptome.
+\newblock {\em Database\/}, {\bf 2013}, bat013.
+
+\bibitem[Garrett-Mayer {\em et~al.}(2008)Garrett-Mayer, Parmigiani, Zhong,
+  Cope, and Gabrielson]{Garrett-Mayer2008}
+Garrett-Mayer, E., Parmigiani, G., Zhong, X., Cope, L., and Gabrielson, E.
+  (2008).
+\newblock Cross-study validation and combined analysis of gene expression
+  microarray data.
+\newblock {\em Biostatistics\/}, {\bf 9}(2), 333--354.
+
+\bibitem[Haibe-Kains {\em et~al.}(2012)Haibe-Kains, Desmedt, Loi, Culhane,
+  Bontempi, Quackenbush, and Sotiriou]{Haibe-Kains2012}
+Haibe-Kains, B., Desmedt, C., Loi, S., Culhane, A.~C., Bontempi, G.,
+  Quackenbush, J., and Sotiriou, C. (2012).
+\newblock A three-gene model to robustly identify breast cancer molecular
+  subtypes.
+\newblock {\em J. Natl. Cancer Inst.}, {\bf 104}(4), 311--325.
+
+\bibitem[Hartley and Sielken(1975)Hartley and Sielken]{Hartley1975-bj}
+Hartley, H.~O. and Sielken, Jr., R.~L. (1975).
+\newblock A ``{Super-Population} viewpoint'' for finite population sampling.
+\newblock {\em Biometrics\/}, {\bf 31}(2), 411--422.
+
+\bibitem[Haybittle {\em et~al.}(1982)Haybittle, Blamey, Elston, Johnson, Doyle,
+  Campbell, Nicholson, and Griffiths]{haybittle1982prognostic}
+Haybittle, J., Blamey, R., Elston, C., Johnson, J., Doyle, P., Campbell, F.,
+  Nicholson, R., and Griffiths, K. (1982).
+\newblock A prognostic index in primary breast cancer.
+\newblock {\em British journal of cancer\/}, {\bf 45}(3), 361.
+
+\bibitem[Hoerl and Kennard(1970)Hoerl and Kennard]{hoerl1970ridge}
+Hoerl, A.~E. and Kennard, R.~W. (1970).
+\newblock Ridge regression: Biased estimation for nonorthogonal problems.
+\newblock {\em Technometrics\/}, {\bf 12}(1), 55--67.
+
+\bibitem[Hu {\em et~al.}(2006)Hu, Fan, Oh, Marron, He, Qaqish, Livasy, Carey,
+  Reynolds, Dressler, Nobel, Parker, Ewend, Sawyer, Wu, Liu, Nanda, Tretiakova,
+  Ruiz~Orrico, Dreher, Palazzo, Perreard, Nelson, Mone, Hansen, Mullins,
+  Quackenbush, Ellis, Olopade, Bernard, and Perou]{Hu2006}
+Hu, Z., Fan, C., Oh, D.~S., Marron, J.~S., He, X., Qaqish, B.~F., Livasy, C.,
+  Carey, L.~A., Reynolds, E., Dressler, L., Nobel, A., Parker, J., Ewend,
+  M.~G., Sawyer, L.~R., Wu, J., Liu, Y., Nanda, R., Tretiakova, M.,
+  Ruiz~Orrico, A., Dreher, D., Palazzo, J.~P., Perreard, L., Nelson, E., Mone,
+  M., Hansen, H., Mullins, M., Quackenbush, J.~F., Ellis, M.~J., Olopade,
+  O.~I., Bernard, P.~S., and Perou, C.~M. (2006).
+\newblock The molecular portraits of breast tumors are conserved across
+  microarray platforms.
+\newblock {\em BMC Genomics\/}, {\bf 7}, 96.
+
+\bibitem[K{\"o}nig(2011)K{\"o}nig]{Konig2011-el}
+K{\"o}nig, I.~R. (2011).
+\newblock Validation in genetic association studies.
+\newblock {\em Brief. Bioinform.}, {\bf 12}(3), 253--258.
+
+\bibitem[Leek {\em et~al.}(2010)Leek, Scharpf, Bravo, Simcha, Langmead,
+  Evan~Johnson, Geman, Baggerly, and Irizarry]{Leek2010}
+Leek, J.~T., Scharpf, R.~B., Bravo, H.~C., Simcha, D., Langmead, B.,
+  Evan~Johnson, W., Geman, D., Baggerly, K., and Irizarry, R.~A. (2010).
+\newblock Tackling the widespread and critical impact of batch effects in
+  high-throughput data.
+\newblock {\em Nat. Rev. Genet.}, {\bf 11}(10), 733--739.
+
+\bibitem[Minn {\em et~al.}(2007)Minn, Gupta, Padua, Bos, Nguyen, Nuyten,
+  Kreike, Zhang, Wang, Ishwaran, {\em et~al.}]{minn2007lung}
+Minn, A.~J., Gupta, G.~P., Padua, D., Bos, P., Nguyen, D.~X., Nuyten, D.,
+  Kreike, B., Zhang, Y., Wang, Y., Ishwaran, H., {\em et~al.} (2007).
+\newblock Lung metastasis genes couple breast tumor size and metastatic spread.
+\newblock {\em Proceedings of the National Academy of Sciences\/}, {\bf
+  104}(16), 6740--6745.
+
+\bibitem[Nelson(1969)Nelson]{Nelson1969}
+Nelson, W. (1969).
+\newblock Hazard plotting for incomplete failure data.
+\newblock {\em Journal of Quality Technology\/}, {\bf 1}, 27--52.
+
+\bibitem[Nelson(1972)Nelson]{Nelson1972}
+Nelson, W. (1972).
+\newblock Theory and applications of hazard plotting for censored failure data.
+\newblock {\em Technometrics\/}, {\bf 14}, 945--965.
+
+\bibitem[Network {\em et~al.}(2011)Network {\em et~al.}]{cancer2011integrated}
+Network, C. G. A.~R. {\em et~al.} (2011).
+\newblock Integrated genomic analyses of ovarian carcinoma.
+\newblock {\em Nature\/}, {\bf 474}(7353), 609--615.
+
+\bibitem[Parmigiani {\em et~al.}(2004)Parmigiani, Garrett-Mayer, Anbazhagan,
+  and Gabrielson]{Parmigiani2004}
+Parmigiani, G., Garrett-Mayer, E.~S., Anbazhagan, R., and Gabrielson, E.
+  (2004).
+\newblock A cross-study comparison of gene expression studies for the molecular
+  classification of lung cancer.
+\newblock {\em Clin. Cancer Res.}, {\bf 10}(9), 2922--2927.
+
+\bibitem[Pils {\em et~al.}(2012)Pils, Hager, Tong, Aust, Heinze, Kohl,
+  Schuster, Wolf, Sehouli, Braicu, {\em et~al.}]{pils2012validating}
+Pils, D., Hager, G., Tong, D., Aust, S., Heinze, G., Kohl, M., Schuster, E.,
+  Wolf, A., Sehouli, J., Braicu, I., {\em et~al.} (2012).
+\newblock Validating the impact of a molecular subtype in ovarian cancer on
+  outcomes: a study of the ovcad consortium.
+\newblock {\em Cancer science\/}, {\bf 103}(7), 1334--1341.
+
+\bibitem[Riester {\em et~al.}(2014)Riester, Wei, Waldron, Culhane, Trippa,
+  Oliva, Kim, Michor, Huttenhower, Parmigiani, and Birrer]{Riester2014}
+Riester, M., Wei, W., Waldron, L., Culhane, A.~C., Trippa, L., Oliva, E., Kim,
+  S.-H., Michor, F., Huttenhower, C., Parmigiani, G., and Birrer, M.~J. (2014).
+\newblock Risk prediction for late-stage ovarian cancer by meta-analysis of
+  1525 patient samples.
+\newblock {\em J. Natl. Cancer Inst.}, {\bf 106}(5).
+
+\bibitem[Schmidt {\em et~al.}(2008)Schmidt, B{\"o}hm, von T{\"o}rne, Steiner,
+  Puhl, Pilch, Lehr, Hengstler, K{\"o}lbl, and Gehrmann]{schmidt2008humoral}
+Schmidt, M., B{\"o}hm, D., von T{\"o}rne, C., Steiner, E., Puhl, A., Pilch, H.,
+  Lehr, H.-A., Hengstler, J.~G., K{\"o}lbl, H., and Gehrmann, M. (2008).
+\newblock The humoral immune system has a key prognostic impact in
+  node-negative breast cancer.
+\newblock {\em Cancer research\/}, {\bf 68}(13), 5405--5413.
+
+\bibitem[Simon {\em et~al.}(2009)Simon, Paik, and Hayes]{Simon2009}
+Simon, R.~M., Paik, S., and Hayes, D.~F. (2009).
+\newblock Use of archived specimens in evaluation of prognostic and predictive
+  biomarkers.
+\newblock {\em J. Natl. Cancer Inst.}, {\bf 101}(21), 1446--1452.
+
+\bibitem[Sotiriou {\em et~al.}(2006)Sotiriou, Wirapati, Loi, Harris, Fox,
+  Smeds, Nordgren, Farmer, Praz, Haibe-Kains, {\em et~al.}]{sotiriou2006gene}
+Sotiriou, C., Wirapati, P., Loi, S., Harris, A., Fox, S., Smeds, J., Nordgren,
+  H., Farmer, P., Praz, V., Haibe-Kains, B., {\em et~al.} (2006).
+\newblock Gene expression profiling in breast cancer: understanding the
+  molecular basis of histologic grade to improve prognosis.
+\newblock {\em Journal of the National Cancer Institute\/}, {\bf 98}(4),
+  262--272.
+
+\bibitem[Symmans {\em et~al.}(2010)Symmans, Hatzis, Sotiriou, Andre,
+  Peintinger, Regitnig, Daxenbichler, Desmedt, Domont, Marth, {\em
+  et~al.}]{symmans2010genomic}
+Symmans, W.~F., Hatzis, C., Sotiriou, C., Andre, F., Peintinger, F., Regitnig,
+  P., Daxenbichler, G., Desmedt, C., Domont, J., Marth, C., {\em et~al.}
+  (2010).
+\newblock Genomic index of sensitivity to endocrine therapy for breast cancer.
+\newblock {\em Journal of clinical oncology\/}, {\bf 28}(27), 4111--4119.
+
+\bibitem[Tothill {\em et~al.}(2008)Tothill, Tinker, George, Brown, Fox, Lade,
+  Johnson, Trivett, Etemadmoghadam, Locandro, {\em et~al.}]{tothill2008novel}
+Tothill, R.~W., Tinker, A.~V., George, J., Brown, R., Fox, S.~B., Lade, S.,
+  Johnson, D.~S., Trivett, M.~K., Etemadmoghadam, D., Locandro, B., {\em
+  et~al.} (2008).
+\newblock Novel molecular subtypes of serous and endometrioid ovarian cancer
+  linked to clinical outcome.
+\newblock {\em Clinical Cancer Research\/}, {\bf 14}(16), 5198--5208.
+
+\bibitem[Troyanskaya {\em et~al.}(2001)Troyanskaya, Cantor, Sherlock, Brown,
+  Hastie, Tibshirani, Botstein, and Altman]{KNN}
+Troyanskaya, O., Cantor, M., Sherlock, G., Brown, P., Hastie, T., Tibshirani,
+  R., Botstein, D., and Altman, R.~B. (2001).
+\newblock Missing value estimation methods for {DNA} microarrays.
+\newblock {\em Bioinformatics\/}, {\bf 17}(6), 520--525.
+
+\bibitem[Waldron {\em et~al.}(2014)Waldron, Haibe-Kains, Culhane, Riester,
+  Ding, Wang, Ahmadifar, Tyekucheva, Bernau, Risch, Ganzfried, Huttenhower,
+  Birrer, and Parmigiani]{Waldron2014}
+Waldron, L., Haibe-Kains, B., Culhane, A.~C., Riester, M., Ding, J., Wang,
+  X.~V., Ahmadifar, M., Tyekucheva, S., Bernau, C., Risch, T., Ganzfried,
+  B.~F., Huttenhower, C., Birrer, M., and Parmigiani, G. (2014).
+\newblock Comparative meta-analysis of prognostic gene signatures for
+  late-stage ovarian cancer.
+\newblock {\em J. Natl. Cancer Inst.}, {\bf 106}(5).
+
+\bibitem[Zhao {\em et~al.}(2014)Zhao, Parmigiani, Huttenhower, and
+  Waldron]{Zhao2014}
+Zhao, S.~D., Parmigiani, G., Huttenhower, C., and Waldron, L. (2014).
+\newblock M\'{a}s-o-menos: a simple sign averaging method for discrimination in
+  genomic data analysis.
+\newblock {\em Bioinformatics\/}.
+
+\end{thebibliography}
