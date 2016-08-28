@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.30)  25 AUG 2016 20:04
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.30)  28 AUG 2016 10:07
 entering extended mode
 **DatasetHeterogeneity_2016-08-28.tex
 
@@ -447,35 +447,42 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[2]
-Underfull \hbox (badness 3482) in paragraph at lines 343--348
+[2] <schema_update_new_allpanels.pdf, id=21, 939.51pt x 1445.4pt>
+File: schema_update_new_allpanels.pdf Graphic file (type pdf)
+
+<use schema_update_new_allpanels.pdf>
+Package pdftex.def Info: schema_update_new_allpanels.pdf used on input line 344
+.
+(pdftex.def)             Requested size: 355.65944pt x 547.16249pt.
+
+Underfull \hbox (badness 3482) in paragraph at lines 349--354
 \OT1/ptm/m/n/9 Bernau \OT1/ptm/m/it/9 et al. \OT1/ptm/m/n/9 (2014) introduced a
  systematic approach for
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 343--348
+Underfull \hbox (badness 1221) in paragraph at lines 349--354
 \OT1/ptm/m/n/9 synthesizing a group of independent microarray datasets with
  []
 
 
-Underfull \hbox (badness 7704) in paragraph at lines 343--348
+Underfull \hbox (badness 7704) in paragraph at lines 349--354
 \OT1/ptm/m/n/9 survival outcome for cross-study assessment of prediction
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 361--373
+Underfull \hbox (badness 1533) in paragraph at lines 367--379
 \OT1/ptm/m/n/9 of studies from a ``super-population'' of studies (Hartley and
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 384--400
+Underfull \hbox (badness 1454) in paragraph at lines 390--406
 \OT1/ptm/m/n/9 method of Bender \OT1/ptm/m/it/9 et al. \OT1/ptm/m/n/9 (2005), t
 he Nelson-Aalen estimator
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 405--408
+Underfull \hbox (badness 1067) in paragraph at lines 411--414
 \OT1/ptm/m/n/9 independent, uniformly distributed variables $\OML/cmm/m/it/9 u\
 OT1/cmr/m/n/9 1$ \OT1/ptm/m/n/9 and $\OML/cmm/m/it/9 u\OT1/cmr/m/n/9 2$\OT1/ptm
 /m/n/9 , then
@@ -490,123 +497,108 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 Overfull \vbox (1.0pt too high) has occurred while \output is active []
 
  [3]
-Underfull \hbox (badness 1325) in paragraph at lines 434--449
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[4 <C:/Users/zhang/Dropbox/Work/GiovanniParmigiani/dataset-heterogeneity/schema
+_update_new_allpanels.pdf>]
+Underfull \hbox (badness 1325) in paragraph at lines 440--455
 \OT1/ptm/m/n/9 datasets of sample size $\OML/cmm/m/it/9 n \OT1/cmr/m/n/9 = 150$
  \OT1/ptm/m/n/9 using the "original sets"
  []
 
-<schema_update_new_allpanels.pdf, id=29, 939.51pt x 1445.4pt>
-File: schema_update_new_allpanels.pdf Graphic file (type pdf)
 
-<use schema_update_new_allpanels.pdf>
-Package pdftex.def Info: schema_update_new_allpanels.pdf used on input line 452
-.
-(pdftex.def)             Requested size: 355.65944pt x 547.16249pt.
-
-Underfull \hbox (badness 1629) in paragraph at lines 459--469
+Underfull \hbox (badness 1629) in paragraph at lines 460--470
 \OT1/ptm/m/n/9 individual bootstrap sampling probabilities of each patient to
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 459--469
+Underfull \hbox (badness 1009) in paragraph at lines 460--470
 \OT1/ptm/m/n/9 probabilities, rather than enforcing strict equality of covariat
 e
  []
 
 
 LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 49
-1.
+2.
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 493.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 494.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
-(Font)              size <5> substituted on input line 493.
+(Font)              size <5> substituted on input line 494.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 493.
+(Font)              size <5> substituted on input line 494.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 493.
+(Font)              size <5> substituted on input line 494.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 493.
+(Font)              size <5> substituted on input line 494.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 493.
+(Font)              size <5> substituted on input line 494.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 493.
+(Font)              size <5> substituted on input line 494.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 493.
+(Font)              size <5> substituted on input line 494.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 493.
+(Font)              size <5> substituted on input line 494.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 493.
+(Font)              size <5> substituted on input line 494.
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 495--505
+Underfull \hbox (badness 1205) in paragraph at lines 496--506
 []\OT1/ptm/m/n/9 where $\OT1/cmr/m/n/9 $ \OT1/ptm/m/n/9 represents the differe
 nces of values computed on
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 495--505
+Underfull \hbox (badness 1661) in paragraph at lines 496--506
 \OT1/ptm/m/n/9 simulations with balanced covariates compared to those with
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 495--505
+Underfull \hbox (badness 1194) in paragraph at lines 496--506
 \OT1/ptm/m/n/9 the unbalanced ones. $\OML/cmm/m/it/9 C$ \OT1/ptm/m/n/9 stands f
 or the cross-study validation
  []
 
-<boxplot_breast_masomenos_5panels.pdf, id=30, 1011.78pt x 614.295pt>
+<boxplot_breast_masomenos_5panels.pdf, id=54, 1011.78pt x 614.295pt>
 File: boxplot_breast_masomenos_5panels.pdf Graphic file (type pdf)
 
 <use boxplot_breast_masomenos_5panels.pdf>
 Package pdftex.def Info: boxplot_breast_masomenos_5panels.pdf used on input lin
-e 539.
+e 540.
 (pdftex.def)             Requested size: 455.24408pt x 276.40207pt.
 
-Overfull \hbox (5.65962pt too wide) in paragraph at lines 550--602
- [][] 
- []
-
-
-Underfull \hbox (badness 1817) in paragraph at lines 602--602
-[]\OT1/ptm/b/n/8 Table 3. Regression table of the mixed-effect models. \OT1/ptm
-/m/n/8 Train, test
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 602--602
-\OT1/ptm/m/n/8 as illustrated in equation 5[]. Regression coefficients are esti
-mated by
- []
-
-<survival_plot.pdf, id=31, 1445.4pt x 1445.4pt>
-File: survival_plot.pdf Graphic file (type pdf)
- <use survival_plot.pdf>
-Package pdftex.def Info: survival_plot.pdf used on input line 609.
-(pdftex.def)             Requested size: 213.39566pt x 213.38211pt.
-
-Underfull \hbox (badness 1097) in paragraph at lines 633--647
+Underfull \hbox (badness 1097) in paragraph at lines 556--570
 \OT1/ptm/m/n/9 of the simulated data to establish that reducing heterogeneity
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 633--647
+Underfull \hbox (badness 4132) in paragraph at lines 556--570
 \OT1/ptm/m/n/9 in prevalence of important clinical covariates and in gene
  []
 
@@ -618,38 +610,15 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 
 Overfull \vbox (1.0pt too high) has occurred while \output is active []
 
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-[4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
- [5 <C:/Users/zhang/Dropbox/Work/GiovanniParmigiani/dataset-heterogeneity/schem
-a_update_new_allpanels.pdf>]
-Underfull \hbox (badness 1077) in paragraph at lines 710--720
+ [5]
+Underfull \hbox (badness 1077) in paragraph at lines 633--643
 \OT1/ptm/m/n/9 factors could improve cross-study validation accuracy, we re-
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 710--720
+Underfull \hbox (badness 1418) in paragraph at lines 633--643
 \OT1/ptm/m/n/9 factors were then the same, on average, for each simulated
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (261.0pt too wide) has occurred while \output is active
@@ -666,9 +635,34 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 
 [6 <C:/Users/zhang/Dropbox/Work/GiovanniParmigiani/dataset-heterogeneity/boxplo
 t_breast_masomenos_5panels.pdf>]
-Underfull \hbox (badness 1231) in paragraph at lines 767--775
+Overfull \hbox (5.65962pt too wide) in paragraph at lines 690--742
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 742--742
+[]\OT1/ptm/b/n/8 Table 3. Regression table of the mixed-effect models. \OT1/ptm
+/m/n/8 Train, test
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 742--742
+\OT1/ptm/m/n/8 as illustrated in equation 5[]. Regression coefficients are esti
+mated by
+ []
+
+<survival_plot.pdf, id=69, 1445.4pt x 1445.4pt>
+File: survival_plot.pdf Graphic file (type pdf)
+ <use survival_plot.pdf>
+Package pdftex.def Info: survival_plot.pdf used on input line 751.
+(pdftex.def)             Requested size: 213.39566pt x 213.38211pt.
+
+Underfull \hbox (badness 1231) in paragraph at lines 766--774
 \OT1/ptm/m/n/9 and baseline hazards across studies, while allowing the joint
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (261.0pt too wide) has occurred while \output is active
@@ -680,69 +674,69 @@ Overfull \vbox (1.0pt too high) has occurred while \output is active []
 
  [7 <C:/Users/zhang/Dropbox/Work/GiovanniParmigiani/dataset-heterogeneity/survi
 val_plot.pdf>]
-Underfull \hbox (badness 3168) in paragraph at lines 862--873
+Underfull \hbox (badness 3168) in paragraph at lines 861--872
 \OT1/ptm/m/n/9 It is commonly assumed that heterogeneity in experimental
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 862--873
+Underfull \hbox (badness 2735) in paragraph at lines 861--872
 \OT1/ptm/m/n/9 platforms or procedures, and differences in patient cohorts,
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 887--910
+Underfull \hbox (badness 1107) in paragraph at lines 886--909
 []\OT1/ptm/m/n/9 In simulations mimicking these two compendia of datasets,
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 887--910
+Underfull \hbox (badness 2495) in paragraph at lines 886--909
 \OT1/ptm/m/n/9 reduce the discrepancy between CV and CSV. This finding
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 920--937
+Underfull \hbox (badness 1009) in paragraph at lines 919--936
 []\OT1/ptm/m/n/9 Mixed-effect models were used to associate the changes in
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 920--937
+Underfull \hbox (badness 1571) in paragraph at lines 919--936
 \OT1/ptm/m/n/9 study validation. Interestingly, we found that although some
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 938--952
+Underfull \hbox (badness 1715) in paragraph at lines 937--951
 \OT1/ptm/m/n/9 good expression measurement comparability through selection
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 938--952
+Underfull \hbox (badness 1259) in paragraph at lines 937--951
 \OT1/ptm/m/n/9 of genes with high Integrative Correlation (Parmigiani \OT1/ptm/
 m/it/9 et al.\OT1/ptm/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 938--952
+Underfull \hbox (badness 2253) in paragraph at lines 937--951
 \OT1/ptm/m/n/9 2004; Garrett-Mayer \OT1/ptm/m/it/9 et al.\OT1/ptm/m/n/9 , 2008)
  only marginally improved
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 953--984
+Underfull \hbox (badness 3568) in paragraph at lines 952--983
 []\OT1/ptm/m/n/9 This study has several limitations. We focus mainly on
  []
 
 
-Underfull \hbox (badness 4556) in paragraph at lines 953--984
+Underfull \hbox (badness 4556) in paragraph at lines 952--983
 \OT1/ptm/m/n/9 comparisons between single heterogeneity sources. Altering
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 953--984
+Underfull \hbox (badness 1178) in paragraph at lines 952--983
 \OT1/ptm/m/n/9 However, we report these results in the supplement to show
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 953--984
+Underfull \hbox (badness 1635) in paragraph at lines 952--983
 \OT1/ptm/m/n/9 interested to explore. We performed simulations only in the
  []
 
@@ -773,62 +767,44 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:11.44545pt when 510.71619pt
+Extra height:29.44545pt when 501.84393pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:11.44545pt when 511.71619pt
+Extra height:29.44545pt when 502.84393pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:11.44545pt when 512.71619pt
+Extra height:29.44545pt when 503.84393pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:11.44545pt when 513.71619pt
+Extra height:29.44545pt when 504.84393pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Extra height:0.0pt when 505.84393pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:11.44545pt when 514.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:11.44545pt when 515.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 516.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:516.71619pt Right:517.43239pt Output:516.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:517.43239pt Right:517.43239pt Output:517.43239pt
+(2)Left:505.84393pt Right:499.68788pt Output:505.84393pt
 - LAST -
 Extra skip:0.0pt
-Left:517.43239pt
-Right:517.43239pt
-Output:517.43239pt
+Left:505.84393pt
+Right:499.68788pt
+Output:505.84393pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -851,7 +827,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  3052 strings out of 495354
  38622 string characters out of 3183859
- 135086 words of memory out of 3000000
+ 133795 words of memory out of 3000000
  6139 multiletter control sequences out of 15000+200000
  54208 words of font info for 114 fonts, out of 3000000 for 9000
  18 hyphenation exceptions out of 8191
@@ -872,7 +848,7 @@ e1/urw/helvetic/uhvbo8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb
 e1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/C
 TEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on DatasetHeterogeneity_2016-08-28.pdf (9 pages, 747740 bytes).
+Output written on DatasetHeterogeneity_2016-08-28.pdf (9 pages, 747921 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

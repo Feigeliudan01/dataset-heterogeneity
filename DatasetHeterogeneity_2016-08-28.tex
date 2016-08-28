@@ -14,7 +14,7 @@
 \firstpage{1}
 
 \title[Cross-study validation]{Dataset heterogeneity in the validation of prediction models across studies}
-\author[Zhang \textit{et~al}]{Yuqing Zhang\,$^{1}$, Christoph Bernau\,$^{2,3}$, Giovanni Parmigiani\,$^{4,5}$ and Levi Waldron\,$^{6}$ \footnote{to whom correspondence should be addressed}}
+\author[Zhang \textit{et~al}]{Yuqing Zhang\,$^{1,4}$, Christoph Bernau\,$^{2,3}$, Giovanni Parmigiani\,$^{4,5}$ and Levi Waldron\,$^{6}$ \footnote{to whom correspondence should be addressed}}
 \address{$^{1}$Boston University Bioinformatics Program, Boston, U.S.A\\
 $^{2}$Leibniz Supercomputing Center, Garching, Germany\\
 $^{3}$Department for Medical Informatics, Biometry and Epidemiology, Munich, Germany \\
@@ -339,6 +339,12 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
 
   \subsection{The \emph{simulatorZ} Bioconductor package}
  
+ \begin{figure*}[htp]
+    \centering
+    \includegraphics[width=12.5cm]{schema_update_new_allpanels.pdf}\\
+    \caption{\textbf{A schema of our study}. Methods and major results for breast cancer are summarized in this flow chart. Equivalent methods were employed for ovarian cancer. }
+    \label{scheme}
+  \end{figure*}
 
   \citet{Bernau2014} introduced a systematic approach for synthesizing a
   group of independent microarray datasets with survival outcome for
@@ -447,12 +453,7 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
     heterogeneity, as described in the next three subsections of
     Methods. The workflow of methods is summarized in Figure \ref{scheme}.
 
-\begin{figure*}[htp]
-    \centering
-    \includegraphics[width=12.5cm]{schema_update_new_allpanels.pdf}\\
-    \caption{\textbf{A schema of our study}. Methods and major results for breast cancer are summarized in this flow chart. Equivalent methods were employed for ovarian cancer. }
-    \label{scheme}
-  \end{figure*}
+
 
   \subsection{Clinical Covariates}
 
@@ -534,92 +535,14 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
 
   
 
-  \begin{figure*}[htp]
+ \begin{figure*}[htp]
      \centering
      \includegraphics[width=16cm]{boxplot_breast_masomenos_5panels.pdf}
-     \caption{\textbf{Simulation results comparing performances of CV and CSV for training M\'{a}s-o-menos on breast cancer data.} Panel "baseline" is a baseline scenario without considering any source of heterogeneity. In "rebalanced covariates", we change the re-sampling probability to coalesce with the distribution of covariates. The differences between CV and CSV are not eliminated. Panel "filtered genes" considers around 1000 genes with high Integrative Correlation, which increases the variance of CSV, but does not explain the difference as well. Panel "same hazard" separates the "true" model, i.e., the same coefficients from \emph{CoxBoost} and the cumulative hazard, and uses the same cumulative hazard but different coefficients for simulation. "Same models" shows great change using both the same coefficients and the same cumulative hazard. A comparison between the last two panels suggests that true coefficients is mainly responsible for the change in "same models". %C-indices of CV is even mildly lower than CSV, which could result from that size of training set in CV is smaller than that in CSV. 
-%         Panel "same hazard" separates the "true" model and uses the same cumulative hazard, but different coefficients for simulation. The fact that CSV drops back suggests that true coefficients is mainly responsible for the change in "same models". In "all of the above", all three heterogeneity sources were equalized. A gap is reintroduced in between CV and CSV compared to using only identical models, but the difference is greatly reduced compared to the baseline simulation. 
-         This figure is our major result which shows that the same true model can largely mitigate and even remove the differences between CSV and CV, while the other two factors cannot explain the performance drop of CSV. Results for the other two dataset / algorithm combinations, and for altering multiple sources, are displayed in Supplementary Figure 1.}
+     \caption{\textbf{Simulation results comparing performances of CV and CSV for training M\'{a}s-o-menos on breast cancer data.} Panel "baseline" is a baseline scenario without considering any source of heterogeneity. In "rebalanced covariates", we change the re-sampling probability to coalesce with the distribution of covariates. The differences between CV and CSV are not eliminated. Panel "filtered genes" considers around 1000 genes with high Integrative Correlation, which increases the variance of CSV, but does not explain the difference as well. Panel "same hazard" separates the "true" model, i.e., the same coefficients from \emph{CoxBoost} and the cumulative hazard, and uses the same cumulative hazard but different coefficients for simulation. "Same models" shows great change using both the same coefficients and the same cumulative hazard. A comparison between the last two panels suggests that true coefficients is mainly responsible for the change in "same models". This figure is our major result which shows that the same true model can largely mitigate and even remove the differences between CSV and CV, while the other two factors cannot explain the performance drop of CSV. Results for the other two dataset / algorithm combinations, and for altering multiple sources, are displayed in Supplementary Figure 1.}
      \label{boxplot_breast_masomenos}
-  \end{figure*}
+ \end{figure*}
 
 \section{Results}
-
-\begin{table}[htbp]
-  \centering
-    \begin{tabular}{llll}
-    \toprule
-    \multicolumn{4}{c}{Breast Cancer} \\
-    \midrule
-          &       & M\'{a}s-o-menos & Ridge Regression \\
-    \hline
-    age   & train & 0.026 * & 0.012 \\
-          &       & (0.011) & (0.010) \\
-          & test  & 0.023 * & 0.027 * \\
-          &       & (0.011) & (0.012) \\
-          & interaction & -0.086 . & 0.008 \\
-          &       & (0.049) & (0.046) \\
-    size  & train & -0.036 ** & -0.003 \\
-          &       & (0.013) & (0.019) \\
-          & test  & -0.024 . & 0.022 \\
-          &       & (0.014) & (0.023) \\
-          & interaction & -0.119 & -0.173 \\
-          &       & (0.108) & (0.146) \\
-    grade & train (high) & -0.039 * & -0.026 \\
-          &       & (0.018) & (0.020) \\
-          & test (high) & -0.087 *** & 5e-5 \\
-          &       & (0.022) & (0.026) \\
-          & interaction (high) & -0.170 * & 0.020 \\
-          &       & (0.071) & (0.059) \\
-          & train (mid) & -0.013 & -0.020 \\
-          &       & (0.020) & (0.028) \\
-          & test (mid) & -0.070 * & 0.003 \\
-          &       & (0.029) & (0.034) \\
-          & interaction (mid) & 0.170 & -0.048 \\
-          &       & (0.108) & (0.108) \\
-	\hline    
-    \multicolumn{4}{c}{Ovarian Cancer} \\
-    \hline
-          &       & M\'{a}s-o-menos &  \\
-    \hline
-    age   & train & -0.014 &  \\
-          &       & (0.023) &  \\
-          & test  & -0.036 &  \\
-          &       & (0.028) &  \\
-          & interaction & 0.586 &  \\
-          &       & (0.511) &  \\
-    debulking & train & 0.029 . &  \\
-          &       & (0.015) &  \\
-          & test  & -0.003 &  \\
-          &       & (0.014) &  \\
-          & interaction & -0.089 &  \\
-          &       & (0.145) &  \\
-	\hline    
-    %\multicolumn{4}{c}{standard errors of coefficients in parentheses } \\
-    \multicolumn{4}{c}{Significant Codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1} \\
-    \bottomrule
-    \end{tabular}%
-  \caption{\textbf{Regression table of the mixed-effect models.} Train, test and interaction refer to the changes in the proportion of the covariates as illustrated in equation \ref{linmod}. Regression coefficients are estimated by treating each term as fixed effect with a random slope. The values in parentheses report the standard errors of the coefficients. Significance of these coefficients are indicated based on the code in the table.}
-  \label{regress-table}%
-\end{table}%
-
-\begin{figure}
-  \centering
-  % Requires \usepackage{graphicx}
-  \includegraphics[width=7.5cm]{survival_plot.pdf}\\
-  \caption{\textbf{Average probability of survival of each set and the
-      combination of all sets for breast cancer}. The true models are different in true
-    baseline cumulative hazard and coefficients. We can compute %the
-    %average linear predictor and the survival function calculated with
-    %the true cumulative hazard and the mean linear predictor. 
-    a survival function for each individual in every dataset with the
-    true cumulative hazard and the linear predictor. 
-    We then average these survival functions across patients within each dataset.
-    Colored lines represent average survival functions in each original
-    sets, while the black, bold line shows the average survival function of
-    all sets combined, with which we will later obtain the same true
-    model in the simulation.}\label{survplot}
-\end{figure}
 
 %Figure \ref{scheme} summarizes the the methods and results of our
 %study. We implemented the \emph{simulatorZ} Bioconductor package to
@@ -762,7 +685,83 @@ outcome do not necessarily significantly relate
 %  absence of microarray batch or platform effects, also does not
 %  mitigate the CV-CSV difference.
 
+\begin{table}[t]
+  \centering
+    \begin{tabular}{llll}
+    \toprule
+    \multicolumn{4}{c}{Breast Cancer} \\
+    \midrule
+          &       & M\'{a}s-o-menos & Ridge Regression \\
+    \hline
+    age   & train & 0.026 * & 0.012 \\
+          &       & (0.011) & (0.010) \\
+          & test  & 0.023 * & 0.027 * \\
+          &       & (0.011) & (0.012) \\
+          & interaction & -0.086 . & 0.008 \\
+          &       & (0.049) & (0.046) \\
+    size  & train & -0.036 ** & -0.003 \\
+          &       & (0.013) & (0.019) \\
+          & test  & -0.024 . & 0.022 \\
+          &       & (0.014) & (0.023) \\
+          & interaction & -0.119 & -0.173 \\
+          &       & (0.108) & (0.146) \\
+    grade & train (high) & -0.039 * & -0.026 \\
+          &       & (0.018) & (0.020) \\
+          & test (high) & -0.087 *** & 5e-5 \\
+          &       & (0.022) & (0.026) \\
+          & interaction (high) & -0.170 * & 0.020 \\
+          &       & (0.071) & (0.059) \\
+          & train (mid) & -0.013 & -0.020 \\
+          &       & (0.020) & (0.028) \\
+          & test (mid) & -0.070 * & 0.003 \\
+          &       & (0.029) & (0.034) \\
+          & interaction (mid) & 0.170 & -0.048 \\
+          &       & (0.108) & (0.108) \\
+	\hline    
+    \multicolumn{4}{c}{Ovarian Cancer} \\
+    \hline
+          &       & M\'{a}s-o-menos &  \\
+    \hline
+    age   & train & -0.014 &  \\
+          &       & (0.023) &  \\
+          & test  & -0.036 &  \\
+          &       & (0.028) &  \\
+          & interaction & 0.586 &  \\
+          &       & (0.511) &  \\
+    debulking & train & 0.029 . &  \\
+          &       & (0.015) &  \\
+          & test  & -0.003 &  \\
+          &       & (0.014) &  \\
+          & interaction & -0.089 &  \\
+          &       & (0.145) &  \\
+	\hline    
+    %\multicolumn{4}{c}{standard errors of coefficients in parentheses } \\
+    \multicolumn{4}{c}{Significant Codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1} \\
+    \bottomrule
+    \end{tabular}%
+  \caption{\textbf{Regression table of the mixed-effect models.} Train, test and interaction refer to the changes in the proportion of the covariates as illustrated in equation \ref{linmod}. Regression coefficients are estimated by treating each term as fixed effect with a random slope. The values in parentheses report the standard errors of the coefficients. Significance of these coefficients are indicated based on the code in the table.}
+  \label{regress-table}%
+\end{table}%
+
   \subsection{Using the Same True Model}
+  
+  \begin{figure}[t]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=7.5cm]{survival_plot.pdf}\\
+  \caption{\textbf{Average probability of survival of each set and the
+      combination of all sets for breast cancer}. The true models are different in true
+    baseline cumulative hazard and coefficients. We can compute %the
+    %average linear predictor and the survival function calculated with
+    %the true cumulative hazard and the mean linear predictor. 
+    a survival function for each individual in every dataset with the
+    true cumulative hazard and the linear predictor. 
+    We then average these survival functions across patients within each dataset.
+    Colored lines represent average survival functions in each original
+    sets, while the black, bold line shows the average survival function of
+    all sets combined, with which we will later obtain the same true
+    model in the simulation.}\label{survplot}
+\end{figure}
 
   True models of experimental sets differ in both baseline survival and
   coefficients. Figure \ref{survplot} shows the average probability of
@@ -862,10 +861,10 @@ outcome do not necessarily significantly relate
 It is commonly assumed that heterogeneity in experimental platforms or
 procedures, and differences in patient cohorts, compromise the
 comparability of independent datasets and the application of
-omics-based prediction models across studies.  The obvious solution is
-to minimize potential sources of heterogeneity, for example by
-enforcing precise inclusion criteria for patient inclusion in clinical
-studies.  However, such narrowing has costs in sample size and
+omics-based prediction models across studies.  This could potentially be addressed by
+minimizing potential sources of heterogeneity, for example by
+enforcing precise inclusion criteria for patient inclusion.
+However, such narrowing has costs in sample size and
 potential generalizability of findings.  To the best of our knowledge,
 no study has suggested a systematic approach to assessing the impact
 of suspected sources of heterogeneity on across-study performance of
