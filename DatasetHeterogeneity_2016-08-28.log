@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.30)  28 AUG 2016 10:07
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.30)  29 AUG 2016 11:18
 entering extended mode
 **DatasetHeterogeneity_2016-08-28.tex
 
@@ -585,12 +585,12 @@ Underfull \hbox (badness 1194) in paragraph at lines 496--506
 or the cross-study validation
  []
 
-<boxplot_breast_masomenos_5panels.pdf, id=54, 1011.78pt x 614.295pt>
-File: boxplot_breast_masomenos_5panels.pdf Graphic file (type pdf)
+<boxplot_breast_masomenos_5panels_new.pdf, id=54, 1011.78pt x 614.295pt>
+File: boxplot_breast_masomenos_5panels_new.pdf Graphic file (type pdf)
 
-<use boxplot_breast_masomenos_5panels.pdf>
-Package pdftex.def Info: boxplot_breast_masomenos_5panels.pdf used on input lin
-e 540.
+<use boxplot_breast_masomenos_5panels_new.pdf>
+Package pdftex.def Info: boxplot_breast_masomenos_5panels_new.pdf used on input
+ line 540.
 (pdftex.def)             Requested size: 455.24408pt x 276.40207pt.
 
 Underfull \hbox (badness 1097) in paragraph at lines 556--570
@@ -634,7 +634,7 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
  []
 
 [6 <C:/Users/zhang/Dropbox/Work/GiovanniParmigiani/dataset-heterogeneity/boxplo
-t_breast_masomenos_5panels.pdf>]
+t_breast_masomenos_5panels_new.pdf>]
 Overfull \hbox (5.65962pt too wide) in paragraph at lines 690--742
  [][] 
  []
@@ -826,7 +826,7 @@ LaTeX Font Warning: Size substitutions with differences
  ) 
 Here is how much of TeX's memory you used:
  3052 strings out of 495354
- 38622 string characters out of 3183859
+ 38642 string characters out of 3183859
  133795 words of memory out of 3000000
  6139 multiletter control sequences out of 15000+200000
  54208 words of font info for 114 fonts, out of 3000000 for 9000
@@ -848,7 +848,7 @@ e1/urw/helvetic/uhvbo8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb
 e1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/C
 TEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on DatasetHeterogeneity_2016-08-28.pdf (9 pages, 747921 bytes).
+Output written on DatasetHeterogeneity_2016-08-28.pdf (9 pages, 747726 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

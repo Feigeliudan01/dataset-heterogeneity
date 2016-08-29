@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.30)  25 AUG 2016 20:04
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.30)  29 AUG 2016 11:19
 entering extended mode
 **supplement_2016-08-28.tex
 
@@ -416,42 +416,42 @@ t_2016-08-28.toc)
  [1
 
 {C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-<boxplot_breast_masomenos_allpanels.pdf, id=60, 1011.78pt x 614.295pt>
-File: boxplot_breast_masomenos_allpanels.pdf Graphic file (type pdf)
+<boxplot_breast_masomenos_allpanels_new.pdf, id=60, 1011.78pt x 614.295pt>
+File: boxplot_breast_masomenos_allpanels_new.pdf Graphic file (type pdf)
 
-<use boxplot_breast_masomenos_allpanels.pdf>
-Package pdftex.def Info: boxplot_breast_masomenos_allpanels.pdf used on input l
-ine 45.
+<use boxplot_breast_masomenos_allpanels_new.pdf>
+Package pdftex.def Info: boxplot_breast_masomenos_allpanels_new.pdf used on inp
+ut line 45.
 (pdftex.def)             Requested size: 455.24408pt x 276.40207pt.
 
-<boxplot_breast_ridge_allpanels.pdf, id=61, 1011.78pt x 614.295pt>
-File: boxplot_breast_ridge_allpanels.pdf Graphic file (type pdf)
+<boxplot_breast_ridge_allpanels_new.pdf, id=61, 1011.78pt x 614.295pt>
+File: boxplot_breast_ridge_allpanels_new.pdf Graphic file (type pdf)
 
-<use boxplot_breast_ridge_allpanels.pdf>
-Package pdftex.def Info: boxplot_breast_ridge_allpanels.pdf used on input line 
-53.
+<use boxplot_breast_ridge_allpanels_new.pdf>
+Package pdftex.def Info: boxplot_breast_ridge_allpanels_new.pdf used on input l
+ine 53.
 (pdftex.def)             Requested size: 455.24408pt x 276.40207pt.
 
-<boxplot_ovarian_masomenos_allpanels.pdf, id=62, 1011.78pt x 614.295pt>
-File: boxplot_ovarian_masomenos_allpanels.pdf Graphic file (type pdf)
+<boxplot_ovarian_masomenos_allpanels_new.pdf, id=62, 1011.78pt x 614.295pt>
+File: boxplot_ovarian_masomenos_allpanels_new.pdf Graphic file (type pdf)
 
-<use boxplot_ovarian_masomenos_allpanels.pdf>
-Package pdftex.def Info: boxplot_ovarian_masomenos_allpanels.pdf used on input 
-line 61.
+<use boxplot_ovarian_masomenos_allpanels_new.pdf>
+Package pdftex.def Info: boxplot_ovarian_masomenos_allpanels_new.pdf used on in
+put line 61.
 (pdftex.def)             Requested size: 455.24408pt x 276.40207pt.
  [2 <C:/Users/zhang/Dropbox/Work/GiovanniParmigiani/dataset-heterogeneity/boxpl
-ot_breast_masomenos_allpanels.pdf> <C:/Users/zhang/Dropbox/Work/GiovanniParmigi
-ani/dataset-heterogeneity/boxplot_breast_ridge_allpanels.pdf>] [3pdfTeX warning
- (ext4): destination with the same identifier (name{figure.1}) has been already
- used, duplicate ignored
+ot_breast_masomenos_allpanels_new.pdf> <C:/Users/zhang/Dropbox/Work/GiovanniPar
+migiani/dataset-heterogeneity/boxplot_breast_ridge_allpanels_new.pdf>] [3pdfTeX
+ warning (ext4): destination with the same identifier (name{figure.1}) has been
+ already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.68 \newpage
               <C:/Users/zhang/Dropbox/Work/GiovanniParmigiani/dataset-heterogen
-eity/boxplot_ovarian_masomenos_allpanels.pdf>] [4pdfTeX warning (ext4): destina
-tion with the same identifier (name{table.1}) has been already used, duplicate 
-ignored
+eity/boxplot_ovarian_masomenos_allpanels_new.pdf>] [4pdfTeX warning (ext4): des
+tination with the same identifier (name{table.1}) has been already used, duplic
+ate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -717,8 +717,8 @@ Package rerunfilecheck Info: File `supplement_2016-08-28.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  6893 strings out of 495354
- 98513 string characters out of 3183859
- 212972 words of memory out of 3000000
+ 98573 string characters out of 3183859
+ 211972 words of memory out of 3000000
  9936 multiletter control sequences out of 15000+200000
  9415 words of font info for 34 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -729,7 +729,7 @@ nts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/C
 TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/CTEX/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmsl10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mti10.pfb>
-Output written on supplement_2016-08-28.pdf (14 pages, 285727 bytes).
+Output written on supplement_2016-08-28.pdf (14 pages, 285557 bytes).
 PDF statistics:
  340 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)

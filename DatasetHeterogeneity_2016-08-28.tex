@@ -537,7 +537,7 @@ PGR, nodal status and HER2 were available in 5, 4, and 2
 
  \begin{figure*}[htp]
      \centering
-     \includegraphics[width=16cm]{boxplot_breast_masomenos_5panels.pdf}
+     \includegraphics[width=16cm]{boxplot_breast_masomenos_5panels_new.pdf}
      \caption{\textbf{Simulation results comparing performances of CV and CSV for training M\'{a}s-o-menos on breast cancer data.} Panel "baseline" is a baseline scenario without considering any source of heterogeneity. In "rebalanced covariates", we change the re-sampling probability to coalesce with the distribution of covariates. The differences between CV and CSV are not eliminated. Panel "filtered genes" considers around 1000 genes with high Integrative Correlation, which increases the variance of CSV, but does not explain the difference as well. Panel "same hazard" separates the "true" model, i.e., the same coefficients from \emph{CoxBoost} and the cumulative hazard, and uses the same cumulative hazard but different coefficients for simulation. "Same models" shows great change using both the same coefficients and the same cumulative hazard. A comparison between the last two panels suggests that true coefficients is mainly responsible for the change in "same models". This figure is our major result which shows that the same true model can largely mitigate and even remove the differences between CSV and CV, while the other two factors cannot explain the performance drop of CSV. Results for the other two dataset / algorithm combinations, and for altering multiple sources, are displayed in Supplementary Figure 1.}
      \label{boxplot_breast_masomenos}
  \end{figure*}
